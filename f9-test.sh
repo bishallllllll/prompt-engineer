@@ -29,7 +29,8 @@ else
     
     if [ "$JUMPS" -gt 0 ]; then
         # Select the text backwards (Hold Ctrl+Shift, press Left JUMPS times)
-        YDO_SELECT="key 29:1 42:1"
+        # Use -d 6 to insert a 6ms delay between events to prevent key drops
+        YDO_SELECT="key -d 6 29:1 42:1"
         for ((i=0; i<JUMPS; i++)); do
             YDO_SELECT="$YDO_SELECT 105:1 105:0"
         done
