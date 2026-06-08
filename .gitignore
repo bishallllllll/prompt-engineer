@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# System temp files
+/tmp/f9_*
+/tmp/refined_*
+f9_raw.txt
+f9_output.txt
+f9_error.txt
+f9_jumps.txt
+
+# Log files
+*.log
